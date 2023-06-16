@@ -13,8 +13,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>NAME=Omprakash
-echo &quot;Helo, $NAME. CUrrent date and time is $(date)&quot;</command>
+      <command>/tmp/script.sh Omprakash prajapati</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

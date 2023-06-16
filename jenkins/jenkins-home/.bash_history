@@ -16,3 +16,8 @@ echo $NAME
 echo "Hello, $NAME. Current date and time is $date"
 echo "Hello, $NAME. Current date and time is $(date)"
 exit
+pwd
+cd /var/jenkins_home/
+ls
+cat script.sh 
+exit

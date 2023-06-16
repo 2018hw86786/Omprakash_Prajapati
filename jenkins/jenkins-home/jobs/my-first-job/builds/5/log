@@ -1,0 +1,7 @@
+Started by user [8mha:////4FgRXla26beizZ65ea0oqlxCgiRHd0tZ4q7rxluFvRBkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgZu/dLi1CL9xJTczDwAg9OS0cAAAAA=[0madmin ji
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-first-job
+[my-first-job] $ /bin/sh -xe /tmp/jenkins246867867116475423.sh
++ /tmp/script.sh Omprakash prajapati
+hello, Omprakash prajapati
+Finished: SUCCESS
