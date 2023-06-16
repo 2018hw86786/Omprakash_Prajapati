@@ -1,0 +1,277 @@
+    1  exit
+    2  sudo su
+    3  exiy
+    4  exit
+    5  sudo -i
+    6  tcpdump
+    7  sudo -i
+    8  cd
+    9  cd .ssh/
+   10  scp * devops@192.168.56.2://home/devops/.ssh/
+   11  ssh devops@192.168.56.2
+   12  ssh-keygen -f "/home/devops/.ssh/known_hosts" -R "192.168.56.2"
+   13  scp * devops@192.168.56.2://home/devops/.ssh/
+   14  scp * devops@192.168.56.2:/home/devops/.ssh/
+   15  exit
+   16  sudo -i
+   17  cd
+   18  touch .hushlogin
+   19  cat .hushlogin 
+   20  sudo -i
+   21  clear
+   22  sudo cd /proc
+   23  cd /proc
+   24  ls
+   25  cat meminfo 
+   26  ll
+   27  ls
+   28  cat version 
+   29  cat cgroups 
+   30  cgroups
+   31  cat diskstats 
+   32  df -Th
+   33  cat /etc/fsab
+   34  cat /etc/fstab
+   35  umont -l /mnt
+   36  sudo umont -l /mnt
+   37  sudo umount -l /mnt
+   38  sudo umount -l /mnt/c
+   39  sudo umount -l /mnt/d
+   40  sudo umount -l /mnt/e
+   41  sudo umount -l /mnt/f
+   42  df -Th
+   43  sudo -i
+   44  sudo -i
+   45  cd /
+   46  ls -lt
+   47  cd important/
+   48  ls
+   49  mkdirfile
+   50  mkdir file
+   51  ls --lt
+   52  ls -lt
+   53  mkdir file{1..500000}
+   54  mkdir file{1..200000}
+   55  mkdir file{1..14500}
+   56  ls
+   57  cd
+   58  exit
+   59  cd /important/
+   60  ls
+   61  touch file{1..14500}
+   62  touch file{14500..290000}
+   63  touch file{14500..29000}
+   64  mkdir file{14500..29000}
+   65  ls
+   66  cd ..
+   67  du -csh *
+   68  sudo apt install selinux* -y
+   69  sudo -i
+   70  getenforce
+   71  sudo serenforce 1
+   72  sudo setenforce 1
+   73  getenforce
+   74  sudo setenforce 0
+   75  sudo setenforce 1
+   76  sudo -i
+   77  sudo apt purge --remove selinux* -y
+   78  getenforce
+   79  sudo poweroff
+   80  exit
+   81  jenkins
+   82  sudo -i
+   83  docker --version
+   84  docker run node
+   85  docker run ansible
+   86  docker run docker
+   87  docker run dockerclear
+   88  sd
+   89  clear
+   90  cd
+   91  ls
+   92  docker ps -a
+   93  docker run -it node
+   94  clear
+   95  docker run -it httpd
+   96  docker run -it node
+   97  node -v
+   98  docker run -it terraform
+   99  cd
+  100  clear
+  101  docker ps -a
+  102  history | grep -i docker
+  103  sudo history | grep -i docker
+  104  sudo -i
+  105  clear
+  106  ls
+  107  r
+  108  apt install r-cran-littler
+  109  sudo apt install r-cran-littler
+  110  sudo apt install r-cran-littler -y | watch
+  111  sudo apt install r-cran-littler -yv
+  112  sudo apt install -vv r-cran-littler -y
+  113  man pt
+  114  man apt
+  115  clear
+  116  ansible --version
+  117  sudo -i
+  118  cd
+  119  ls
+  120  wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.9/bin/apache-tomcat-10.1.9.tar.gz
+  121  clea
+  122  clear
+  123  ls
+  124  tar -xvzf apache-tomcat-10.1.9.tar.gz 
+  125  ls
+  126  cd apache-tomcat-10.1.9/
+  127  ls
+  128  cd bin/
+  129  ls
+  130  ls -lt
+  131  cd ..
+  132  ls
+  133  cd webapps/
+  134  l;s
+  135  ls
+  136  cd ../bin/
+  137  ls
+  138  ./startup.sh 
+  139  cd ../webapps/
+  140  wget https://updates.jenkins.io/latest/jenkins.war
+  141  cd ../bi
+  142  cd ../bin/
+  143  ./shutdown.sh 
+  144  ./startup.sh
+  145  cd ../webapps/
+  146  ls
+  147  ls -lt
+  148  ompr
+  149  op
+  150  365
+  151  1234567890
+  152  cd ../bin
+  153  ;s
+  154  ls
+  155  ./shutdown.sh
+  156  echo $JAVA_HOME
+  157  ./startup.sh
+  158  echo $CATALINA_HOME
+  159  ls
+  160  ./setclasspath.sh 
+  161  sudo ./setclasspath.sh 
+  162  jv --version
+  163  java --version
+  164  echo $JAVA
+  165  cat /etc/expor
+  166  cat /etc/exports
+  167  cat /etc/environment
+  168  cat /etc/bashrc
+  169  sudo cat /etc/bashrc
+  170  sudo cat /bashrc
+  171  sudo -i
+  172  ls
+  173  cd ../..
+  174  ls
+  175  mkdir /etc/tomcat
+  176  sudo mkdir /etc/tomcat
+  177  sudo mv apache-tomcat-10.1.9 /etc/tomcat/
+  178  ls
+  179  sudo -i
+  180  wsl --shutdown
+  181  exit
+  182  cd
+  183  clear
+  184  ls
+  185  id devops
+  186  mkdie jenkins
+  187  mkdir jenkins
+  188  cd jenkins/
+  189  cd
+  190  ls
+  191  cd jenkins/
+  192  ls
+  193  mkdir jenkins-home
+  194  sudo -i
+  195  cd jenkins-home/
+  196  clear
+  197  ls
+  198  cat secret
+  199  cat secret.key
+  200  cd secrets/
+  201  ls
+  202  cp initialAdminPassword initialAdminPassword_bk
+  203  cat initialAdminPassword
+  204  ls
+  205  cd ..
+  206  ls
+  207  sudo -i
+  208  clear
+  209  cd
+  210  cd jenkins/jenkins-home/
+  211  docker ps -a
+  212  docker exec -ti jenkins bash
+  213  exit
+  214  ls
+  215  cd DevOps/
+  216  python3 example.py 
+  217  git init
+  218  ls -la
+  219  git status
+  220  git add .
+  221  git status
+  222  git commit -m "initial code"
+  223  git config --global username.email 2018hw86786@wilp.bits-pilani.ac.in
+  224  git config --global username.name "omprakash prajapati"
+  225  git commit -m "initial code"
+  226  cd DevOps/
+  227  ls
+  228  cearl
+  229  clear
+  230  git init
+  231  git status
+  232  git add .
+  233  git status
+  234  git commit -m "first commit"
+  235  git config --global user.email 2018hw86786@wilp.bits-pilani.ac.in
+  236  git config --global user.name 2018hw86786
+  237  git config --global user.email "2018hw86786@wilp.bits-pilani.ac.in"
+  238  git config --global user.name "2018hw86786"
+  239  git config user.name
+  240  git config user.email
+  241  git commit -m "first commit"
+  242  git remote add origin https://github.com/2018hw86786/Omprakash_Prajapati.git
+  243  git pust -u origin master
+  244  git push -u origin master
+  245  clear
+  246  python3 example.py 
+  247  git loh
+  248  git log
+  249  git push -u origin main
+  250  git remote add origin https://github.com/2018hw86786/Omprakash_Prajapati.git
+  251  git pust -u origin main
+  252  git push -u origin main
+  253  git commit -m "first commit"
+  254  ls -la
+  255  cd DevOps/
+  256  git push -u origin main
+  257  git remote add origin https://github.com/2018hw86786/Omprakash_Prajapati.git
+  258  git push -u origin main
+  259  git pull -u origin main
+  260  clear
+  261  git pull -u origin main
+  262  git push -u origin main
+  263  git remove -v
+  264  git remote -v
+  265  git push -u origin main
+  266  /bin/python3 /home/devops/DevOps/example.py
+  267  cd DevOps/
+  268  git push -u origin main
+  269  git pull -u origin main all
+  270  git pull all
+  271  git pull main
+  272  git remote add origin https://github.com/2018hw86786/Omprakash_Prajapati.git
+  273  rm -rf .git/
+  274  ls -la
+  275  git init
+  276  git add .
+  277  history >file
