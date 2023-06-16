@@ -1,0 +1,24 @@
+---
+- hosts: all
+  vars:
+    web_packages: http
+    db_package: mariadb-server
+    db_service: mariadb
+  become: true 
+  tasks:
+    - name: going on
+      block:
+        - name: 'installing the {{web_packages}}'
+          yum:
+            name: '{{web_packages}}'
+            state: present
+      rescue:
+        - name: 'installing the {{db_package}}'
+          yum:
+            name: '{{db_package}}'
+            state: present
+      always:
+        - name: 'restarting the {{db_service}} database service'
+          service:
+            name: '{{db_service}}'
+            state: restarted

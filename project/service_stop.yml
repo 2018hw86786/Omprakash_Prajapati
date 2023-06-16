@@ -1,0 +1,12 @@
+---
+- name: stop services
+  hosts: all
+  become: true 
+  tasks:
+    - name: "top services {{ item }}"
+      service:
+        name: firewalld #"{{ item }}"
+        # loop:
+        #   - firewalld
+        state: stopped
+        enabled: false

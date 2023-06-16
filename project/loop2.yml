@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: Looping the ECHO task
+      shell: "ehco, this is my team;: {{ item }}"
+      loop:
+        - one 
+        - two
+      register: echo_results
+
+    - name: Shwo stdot from the previous task
+      debug:
+        msg: "STDOUT from previous task: {{ item.cmd }}"
+      loop: "{{ echo_results['results']}}"

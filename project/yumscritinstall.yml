@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: update the packages
+      yum:
+        name: '*'
+        state: latest
+      
+    - name: istll the packages
+      yum:
+        name:
+          - gcc
+          - perl
+          - tar
+          - bzip2
+          - kernel-devel
+        state: latest
+
+    # - name: all done
