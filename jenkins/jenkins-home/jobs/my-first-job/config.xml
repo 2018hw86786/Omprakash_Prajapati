@@ -16,6 +16,19 @@
           <defaultValue>Prajapati</defaultValue>
           <trim>false</trim>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>LAST_NAME</name>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>akaram</string>
+              <string>bakram</string>
+              <string>tikram</string>
+              <string>choukram</string>
+              <string>hakaram</string>
+              <string>bokarou</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -28,8 +41,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Hello, $FIRST_NAME $SECOND_NAME&quot;
-#/tmp/script.sh $NAME $LASTNAME</command>
+      <command>echo &quot;Hello, $FIRST_NAME $SECOND_NAME $LAST_NAME&quot;
+#/tmp/script.sh $NAME $SECOND_NAME $LAST_NAME</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
