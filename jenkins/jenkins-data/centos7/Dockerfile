@@ -9,7 +9,7 @@ RUN groupadd centos && \
     echo "%centos   ALL=(ALL)   NOPASSWD: ALL" >>/etc/sudoers
 
 RUN useradd remote_user && \
-    echo "1234" | passwd remote_user --stdin && \
+    echo "remote_user:1234" | chpasswd  && \
     
     mkdir /home/remote_user/.ssh && \
     chmod 700 /home/remote_user/.ssh
