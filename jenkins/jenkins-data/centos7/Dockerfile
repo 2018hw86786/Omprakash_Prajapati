@@ -1,6 +1,7 @@
 FROM centos
 
-RUN yum -y install openssh-server
+RUN yum update -y && \
+    yum -y install openssh-server
 
 RUN useradd -aG wheel remote_user && \
     echo "1234" | passwd remote_user --stdin && \
