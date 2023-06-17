@@ -5,8 +5,9 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 
 RUN yum update -y && \
     yum -y install epel-release && \
-    yum -y openssh-server
+    yum -y install openssh-server
 RUN groupadd centos && \
+    usermod -aG centos remote_user && \
     echo "%centos   ALL=(ALL)   NOPASSWD: ALL" | tee -a /etc/sudoers.d/centos
 
 RUN useradd remote_user && \
