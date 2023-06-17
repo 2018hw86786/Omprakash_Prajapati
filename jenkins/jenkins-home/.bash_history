@@ -21,3 +21,23 @@ cd /var/jenkins_home/
 ls
 cat script.sh 
 exit
+cd
+ls
+cd /var/jenkins_home/
+ls
+cp script.sh /tmp
+cd /tmp/
+chmod +x script.sh 
+vi script.sh 
+nano script.sh 
+vi script.sh 
+exit
+cd tmp
+ls
+ls -lt
+fish
+ccat script.sh 
+cat script.sh 
+./script.sh Omprakash Prajapati false
+cat -n script.sh 
+exit

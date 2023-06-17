@@ -29,6 +29,10 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>SHOW</name>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -41,8 +45,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Hello, $FIRST_NAME $SECOND_NAME $LAST_NAME&quot;
-#/tmp/script.sh $NAME $SECOND_NAME $LAST_NAME</command>
+      <command>#echo &quot;Hello, $FIRST_NAME $SECOND_NAME $LAST_NAME&quot;
+/tmp/script.sh $FIRST_NAME $SECOND_NAME $SHOW</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
