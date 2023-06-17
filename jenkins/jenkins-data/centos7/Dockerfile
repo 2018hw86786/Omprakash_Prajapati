@@ -6,7 +6,7 @@ RUN sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|
 RUN yum update -y && \
     yum -y install openssh-server
 RUN groupadd centos && \
-    echo "%centos   ALL=(ALL)   NOPASSWD: ALL" >>/etc/sudoers
+    echo "%centos   ALL=(ALL)   NOPASSWD: ALL" | tee -a /etc/sudoers.d/centos
 
 RUN useradd remote_user && \
     echo "remote_user:1234" | chpasswd  && \
