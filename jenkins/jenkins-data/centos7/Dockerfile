@@ -8,7 +8,7 @@ RUN yum update -y && \
 RUN groupadd centos && \
     echo "%centos   ALL=(ALL)   NOPASSWD: ALL" >>/etc/sudoers
 
-RUN useradd -aG centos remote_user && \
+RUN useradd remote_user && \
     echo "1234" | passwd remote_user --stdin && \
     mkhomedir_helper remote_user && \
     mkdir /home/remote_user/.ssh && \
