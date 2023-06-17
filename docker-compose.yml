@@ -11,7 +11,7 @@ services:
       - net  
     remote_host:
       container_name: remote-host 
-      image: remote-user
+      image: remote-host
       build:
         context: centos7
       networks:
