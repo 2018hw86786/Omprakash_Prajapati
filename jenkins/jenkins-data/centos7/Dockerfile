@@ -7,13 +7,14 @@ RUN yum update -y && \
     yum -y install epel-release && \
     yum -y install openssh-server
 RUN groupadd centos && \
-    usermod -aG centos remote_user && \
+    
     echo "%centos   ALL=(ALL)   NOPASSWD: ALL" | tee -a /etc/sudoers.d/centos
 
 RUN useradd remote_user && \
     echo "remote_user:1234" | chpasswd  && \
     mkdir /home/remote_user/.ssh && \
-    chmod 700 /home/remote_user/.ssh
+    chmod 700 /home/remote_user/.ssh && \
+    usermod -aG centos remote_user && \
 
 COPY remote-key.pub /home/remote_user/.ssh/authorized_keys
 
