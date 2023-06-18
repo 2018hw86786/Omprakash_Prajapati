@@ -10,4 +10,5 @@
 # fi
 FIRST_NAME=$1
 SECOND_NAME=$2
-echo "hello $FIRST_NAME $SECOND_NAME"
+LAST=$3
+echo "hello $FIRST_NAME $SECOND_NAME $LAST"
