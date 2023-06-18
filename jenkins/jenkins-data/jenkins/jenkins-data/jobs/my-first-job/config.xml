@@ -17,8 +17,13 @@
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>LAST</name>
+          <defaultValue> </defaultValue>
           <trim>false</trim>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>BULLI</name>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
@@ -31,7 +36,8 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>/bin/bash /tmp/script.sh $FIRST_NAME $SECOND_NAME $LAST</command>
+      <command>#echo &quot;Hello $FIRST_NAME $SECOND_NAME $LAST&quot;
+/bin/bash /tmp/script.sh $FIRST_NAME $SECOND_NAME $BULLI</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>
