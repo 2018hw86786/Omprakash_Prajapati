@@ -223,6 +223,9 @@ function generateDropdown(element, callback) {
         });
         callback(instance);
       });
+    },
+    onShown(instance) {
+      behavior_shim.applySubtree(instance.popper);
     }
   }));
 }
