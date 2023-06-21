@@ -2,11 +2,11 @@ version: '3'
 services:
   jenkins:
     container_name: jenkins
-    image: bitnami/jenkins
+    image: rancher/jenkins-jenkins
     ports:
       - "8080:8080"
     volumes:
-      - "$PWD/jenkins/jenkins-data:/bitnami/jenkins"   #/var/jenkins_home"
+      - "$PWD/jenkins/jenkins-data:/var/jenkins_home"
     networks:
       - net  
   remote_host:
