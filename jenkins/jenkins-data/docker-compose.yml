@@ -23,7 +23,7 @@ services:
       - "MYSQL_ROOT_PASSWORD=1234"
     volumes:
       - "$PWD/db_data:/var/lib/:rw"
-    entrypoint: chmod -R 755 $PWD/db_data && tail -f /dev/null
+    
     networks:
       - net
 networks:
