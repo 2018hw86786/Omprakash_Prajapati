@@ -26,7 +26,7 @@ RUN curl -O https://bootstrap.pypa.io/pip/2.7/get-pip.py && \
     python get-pip.py && \
     pip install awscli --upgrade
 
-RUN groupadd -r devops && useradd -r -g devops mysql
+#RUN groupadd -r devops && useradd -r -g devops mysql
 
 CMD /usr/sbin/sshd -D
 
