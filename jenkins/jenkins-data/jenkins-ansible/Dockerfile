@@ -6,7 +6,7 @@ USER root
 #     python get-pip.py && \
 #     pip install ansible --upgrade
 
-RUN curl -O https://bootstrap.pypa.io/pip/3.6/get-pip.py && \ 
+RUN wget https://bootstrap.pypa.io/pip/3.6/get-pip.py && \ 
     python get-pip.py && \
     pip install ansible --upgrade
 
