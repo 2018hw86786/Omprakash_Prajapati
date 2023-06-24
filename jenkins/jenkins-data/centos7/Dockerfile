@@ -20,7 +20,7 @@ RUN chown remote_user:remote_user -R /home/remote_user/ && \
 
 RUN /usr/sbin/sshd-keygen
 
-RUN yum -y instal mysql
+RUN yum -y install mysql
 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py && \
     python get-pip.py && \
