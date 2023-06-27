@@ -12,3 +12,5 @@ sudo -i
 su root
 su root
 exit
+su root
+exit
