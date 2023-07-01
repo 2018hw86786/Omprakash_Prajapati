@@ -6,7 +6,7 @@ USER root
 #     python get-pip.py && \
 #     pip install ansible --upgrade
 RUN apt update 
-RUN apt-get -y install python3 python3-pip sshpass passwd ansible
+RUN apt-get -y install python3 python3-pip sshpass passwd ansible+
 RUN curl -O https://bootstrap.pypa.io/pip/3.6/get-pip.py && \ 
     python3 get-pip.py && \
     pip3 install ansible --upgrade
